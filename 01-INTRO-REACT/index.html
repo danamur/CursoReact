@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Carga React -->
     <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
@@ -11,7 +12,7 @@
 
     <title>ReactApp</title>
 </head>
-<body>
+<body class="bg-dark">
     <div id="root"></div>
 
     <script type="text/babel">
@@ -23,7 +24,13 @@
         const nombre = 'Dwight Schrute';
 
         /* Creamos un elemento JSX que contiene un encabezado h1 */
-        const h1Tag = <h1>Hola, soy { nombre }</h1>;
+        const h1Tag =<div class="container d-flex justify-content-center align-items-center" style={{ height: '100vh'}}>
+            <div class="card text-center bg-dark border-light">
+                <div class="card-body">
+                    <h1 class="card-title text-light">Hola, soy { nombre }</h1>
+                </div>
+            </div>        
+        </div>;
 
         /* Renderizamos el elemento JSX en el elemento con el id 'root' */
         ReactDOM.render(h1Tag, divRoot);

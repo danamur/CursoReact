@@ -1,10 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-/* Componente que vamos a renderizar en nuestra aplicación */
-const App = () => {
-    return (<h1>Hola Mundo !!!</h1>)
-}
+import { App } from './App'
 
 /** 
  * Configuración y renderizado de nuestra aplicación.

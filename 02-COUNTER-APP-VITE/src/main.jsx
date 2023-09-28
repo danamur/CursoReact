@@ -9,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // @ts-ignore
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-
 /** 
  * Configuración y renderizado de nuestra aplicación.
  * Usamos React Strict Mode para detectar posibles problemas y advertencias.

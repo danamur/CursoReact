@@ -5,6 +5,10 @@ import { CounterApp } from './CounterApp';
 //import { FirstApp } from './FirstApp'
 
 import './styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// @ts-ignore
+import 'bootstrap/dist/js/bootstrap.min.js';
+
 
 /** 
  * Configuración y renderizado de nuestra aplicación.

@@ -32,3 +32,5 @@ Utilizamos Jest para pruebas unitarias. Instálalo junto con sus tipos utilizand
 npm install --save-dev jest
 npm install --save @types/jest
 ```
+
+Se crea archivo babel.config.cjs para el correcto funcionamiento de las pruebas

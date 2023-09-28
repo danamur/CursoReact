@@ -1,14 +1,9 @@
-const newMessage = {
-    name: 'Daniel Namur',
-    title: 'Desarrollador Full Stack'
-};
-
-export const FirstApp = () => {
+export const FirstApp = ({ name = 'Usuario', title = 'Desarrollador'}) => {
 
     return (
         <>
-            <h1>{ newMessage.name }</h1>
-            <p>{ newMessage.title }</p>
+            <h1>{ name }</h1>
+            <p>{ title }</p>
         </>
     )
 }

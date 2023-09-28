@@ -13,6 +13,6 @@ import './styles.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    <FirstApp name="Daniel Namur" title = "Desarrollador Full Stack"/>
+    <FirstApp title = "Hola, Soy Daniel Namur" subTitle = { 123 }/>
   </React.StrictMode>
 )

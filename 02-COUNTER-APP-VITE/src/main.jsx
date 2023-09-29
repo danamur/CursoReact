@@ -16,6 +16,6 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <CounterApp value = { 0 }/> */}
-    <FirstApp title='Bienvenido Dwihgt'/>
+    <FirstApp title='Bienvenido, Dwihgt'/>
   </React.StrictMode>
 )

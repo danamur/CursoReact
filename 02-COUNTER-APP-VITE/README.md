@@ -43,4 +43,5 @@ Se crea archivo babel.config.cjs para el correcto funcionamiento de las pruebas.
 06-deses-obj.js
 07-deses-arr.js
 08-imp-exp.js
+09-promesas.js
 ```

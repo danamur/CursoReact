@@ -33,4 +33,11 @@ npm install --save-dev jest
 npm install --save @types/jest
 ```
 
-Se crea archivo babel.config.cjs para el correcto funcionamiento de las pruebas
+Se crea archivo babel.config.cjs para el correcto funcionamiento de las pruebas.
+
+### Archivos de pruebas
+
+```bash
+02-template-string.js
+05-funciones.js
+```

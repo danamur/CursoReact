@@ -40,4 +40,6 @@ Se crea archivo babel.config.cjs para el correcto funcionamiento de las pruebas.
 ```bash
 02-template-string.js
 05-funciones.js
+06-deses-obj.js
+07-deses-arr.js
 ```

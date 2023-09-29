@@ -46,3 +46,16 @@ Se crea archivo babel.config.cjs para el correcto funcionamiento de las pruebas.
 09-promesas.js
 11-async-await.js
 ```
+
+## Pruebas a componentes
+Utilizaremos Testing Library para realizar pruebas unitarias a nuestros componentes. Instalado con los siguientes comando:
+
+```bash
+npm install --save-dev @testing-library/react
+```
+
+### Archivos de pruebas
+
+```bash
+
+```

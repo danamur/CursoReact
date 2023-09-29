@@ -51,11 +51,14 @@ Se crea archivo babel.config.cjs para el correcto funcionamiento de las pruebas.
 Utilizaremos Testing Library para realizar pruebas unitarias a nuestros componentes. Instalado con los siguientes comando:
 
 ```bash
+npm install --save-dev babel-jest @babel/core @babel/preset-env
 npm install --save-dev @testing-library/react
+npm install --save-dev @babel/present-react
+npm install --save-dev jest-environment-jsdom
 ```
 
 ### Archivos de pruebas
 
 ```bash
-
+FirstApp.jsx
 ```

@@ -1,10 +1,11 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useState } from 'react'
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState([ 'Dwight' ]);
+    const [categories, setCategories] = useState(['Dwight']);
 
     // Función para agregar una nueva categoría
     const onAddCategory = (newCategory) => {
@@ -24,19 +25,18 @@ export const GifExpertApp = () => {
         <Container>
             <Row>
                 <Col className="mt-5">
-                    <h1 className="text-center text-light">GifExpertApp</h1>
-                    
+                    <h1 className="text-center text-light mb-4 display-4 fw-bold">GifExpertApp</h1>
+
                     {/* Input */}
-                    <AddCategory onAddCategory={onAddCategory}/>
-                    
+                    <AddCategory onAddCategory={onAddCategory} />
+
                     {/* Listado de Gif */}
-                    <ol>
-                        { 
-                            categories.map((category) => {
-                                return <li key={category} className="text-light">{category}</li>;
-                            })
-                        }
-                    </ol>
+                    {categories.map((category) => (
+                        <GifGrid
+                            key={category}
+                            category={category}
+                        />
+                    ))}
                 </Col>
             </Row>
         </Container>

@@ -1,8 +1,7 @@
 import { Card, Col, Row } from "react-bootstrap"
 
-import { GifItem } from "./GifItem";
-import { useFecthGifs } from "../hooks/useFecthGifs";
-import { LoadingMessage } from "./LoadingMessage";
+import { GifItem, LoadingMessage } from "./";
+import { useFecthGifs } from "../hooks";
 
 export const GifGrid = ({ category }) => {
 

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "react-bootstrap"
 
 export const AddCategory = ({ onAddCategory }) => {
 

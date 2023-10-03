@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Card, Col } from 'react-bootstrap'
 
 export const GifItem = ({ title, url }) => {
@@ -15,4 +16,9 @@ export const GifItem = ({ title, url }) => {
             </div>
         </Col>
     )
+}
+
+GifItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
 }

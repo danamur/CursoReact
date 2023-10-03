@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifItem /> Debería coincidir con el snapshot 1`] = `
+<div>
+  <div
+    class="col-lg-3 col-md-4 col-sm-6 col-12"
+  >
+    <div
+      class="d-flex h-100"
+    >
+      <div
+        class="bg-dark text-light mt-4 border border border-secondary card"
+      >
+        <img
+          alt="Saitama"
+          src="http://hola.jpg/"
+        />
+        <div
+          class="d-flex flex-column align-items-start card-body"
+        >
+          <div
+            class="mt-auto card-title h5"
+          >
+            Saitama
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

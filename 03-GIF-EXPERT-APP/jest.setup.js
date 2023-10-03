@@ -1,0 +1,1 @@
+require('whatwg-fetch'); // <-- npm install whatwg-fetch --save-dev

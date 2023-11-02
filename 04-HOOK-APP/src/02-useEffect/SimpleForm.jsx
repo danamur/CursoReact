@@ -1,28 +1,28 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Message } from "./Message";
+import { useForm } from "../hooks/useForm";
 
 export const SimpleForm = () => {
 
-    const [formState, setFormState] = useState({
-        username: 'strider',
+    /* Utilizamos el hook personalizado useForm para gestionar el estado del formulario. */
+    const { formState, onInputChange } = useForm({
+        username: 'Gambito',
         email: 'example@example.com'
     });
 
     const { username, email } = formState;
 
-    const onInputChange = ({ target }) => {
-        const { name, value } = target;
-        setFormState({ ...formState, [name]: value });
-    };
-
+    /* Este useEffect se dispara solo una vez cuando se carga el componente. */
     useEffect(() => {
         //console.log('Se dispara solo una vez cuando se carga el componente');
     }, []);
 
+    /* Este useEffect se dispara cuando obtenemos cambios en el formulario (formState). */
     useEffect(() => {
         //console.log('Se dispara cuando obtenemos cambios en el formulario');
     }, [formState]);
 
+    /* Este useEffect se dispara cuando existen cambios en el email del formulario (email). */
     useEffect(() => {
         //console.log('Se dispara cuando existen cambios en el email del formualario');
     }), [email];

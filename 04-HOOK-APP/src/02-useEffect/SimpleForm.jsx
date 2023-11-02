@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Message } from "./Message";
 
 export const SimpleForm = () => {
 
@@ -11,20 +12,20 @@ export const SimpleForm = () => {
 
     const onInputChange = ({ target }) => {
         const { name, value } = target;
-        setFormState({ ...formState, [ name ]: value });
+        setFormState({ ...formState, [name]: value });
     };
 
     useEffect(() => {
-      console.log('Se dispara solo una vez cuando se carga el componente');
+        //console.log('Se dispara solo una vez cuando se carga el componente');
     }, []);
-    
-    useEffect(() => {
-        console.log('Se dispara cuando obtenemos cambios en el formulario');
-    }, [ formState ]);
 
     useEffect(() => {
-        console.log('Se dispara cuando existen cambios en el email del formualario');
-    }), [ email ];
+        //console.log('Se dispara cuando obtenemos cambios en el formulario');
+    }, [formState]);
+
+    useEffect(() => {
+        //console.log('Se dispara cuando existen cambios en el email del formualario');
+    }), [email];
 
     return (
         <>
@@ -33,9 +34,10 @@ export const SimpleForm = () => {
                     <div className="col text-center">
                         <h1 className="text-light">Simple Form</h1>
                         <form className="d-flex flex-column align-items-center">
-                            <input type="text" name="username" className="form-control mb-3" placeholder="Username" value={ username } onChange={ onInputChange }/>
-                            <input type="email" name="email" className="form-control mb-3" placeholder="example@example.com" value={ email } onChange={ onInputChange }/>
+                            <input type="text" name="username" className="form-control mb-3" placeholder="Username" value={username} onChange={onInputChange} />
+                            <input type="email" name="email" className="form-control mb-3" placeholder="example@example.com" value={email} onChange={onInputChange} />
                         </form>
+                        {(username === 'strider2') && <Message />}
                     </div>
                 </div>
             </div>

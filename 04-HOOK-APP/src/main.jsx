@@ -13,7 +13,7 @@ import { SimpleForm } from './02-useEffect/SimpleForm';
 document.body.classList.add('bg-dark');
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <SimpleForm />
-  </React.StrictMode>,
+  //<React.StrictMode>
+  <SimpleForm />
+  //</React.StrictMode>,
 )

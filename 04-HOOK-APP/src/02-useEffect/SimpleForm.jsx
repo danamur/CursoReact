@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Message } from "./Message";
-import { useForm } from "../hooks/useForm";
+import { useForm } from "../hooks";
 
 export const SimpleForm = () => {
 

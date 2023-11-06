@@ -9,5 +9,5 @@ document.body.classList.add('bg-dark');
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GifExpertApp />
-  </React.StrictMode>,
+  </React.StrictMode>
 )

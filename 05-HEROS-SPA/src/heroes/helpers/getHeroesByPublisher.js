@@ -10,4 +10,4 @@ export const getHeroesByPublisher = ( publisher ) => {
 
     return heroes.filter( heroe => heroe.biography.publisher === publisher);
 
-}
+};

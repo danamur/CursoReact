@@ -4,13 +4,25 @@ import { Pagination } from "./Pagination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { getHeroesByPublisher } from "../helpers";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import queryString from 'query-string';
 
 const heroesPerPage = 20;
 
 export const HeroList = ({ publisher }) => {
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const { q = '' } = queryString.parse(location.search);
+
+    if (isNaN(q)) {
+        navigate(`/`);
+    }
+
     const [loading, setLoading] = useState(true);
     const [heroes, setHeroes] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage, setCurrentPage] = (q.length > 0) ? useState(q) : useState(1);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -32,6 +44,8 @@ export const HeroList = ({ publisher }) => {
     }, [publisher, currentPage]);
 
     const handlePageChange = (newPage) => {
+        navigate(`?q=${newPage}`);
+
         setCurrentPage(newPage);
         setLoading(true);
     };

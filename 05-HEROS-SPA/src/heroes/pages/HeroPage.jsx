@@ -1,5 +1,5 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import { getHeroeById } from "../helpers";
+import { getHeroeByName } from "../helpers";
 import { useNavbarHeight } from "../hooks";
 import { useMemo } from "react";
 
@@ -9,7 +9,7 @@ export const HeroPage = () => {
 
   const { name } = useParams();
 
-  const heroe = useMemo( () => getHeroeById(name), [ name ]);
+  const heroe = useMemo( () => getHeroeByName(name)[0], [ name ]);
 
   const onNavigateBack = () => {
     navigate(-1);

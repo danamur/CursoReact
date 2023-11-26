@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { AuthContext } from '../../auth';
 
 export const NavbarPage = () => {
+
+    const { user } = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -66,6 +68,9 @@ export const NavbarPage = () => {
                     </li>
                 </ul>
 
+                <span class="mx-3">
+                    {user?.name}
+                </span>
                 <button className='btn btn-outline-danger' onClick={onLogout}>
                     Logout
                 </button>

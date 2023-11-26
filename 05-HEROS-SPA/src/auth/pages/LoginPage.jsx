@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../context";
 
 export const LoginPage = () => {
 
@@ -8,9 +10,11 @@ export const LoginPage = () => {
   const [contrasenaValida, setContrasenaValida] = useState(true);
   const [emailValido, setEmailValido] = useState(true);
 
+  const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleEnviar = (e) => {
+
     e.preventDefault();
     const contrasenaValue = contrasenaRef.current.value;
     const emailValue = emailRef.current.value;
@@ -28,6 +32,7 @@ export const LoginPage = () => {
     }
 
     if (contrasenaValue && emailValue && validarEmail(emailValue)) {
+      login('gambito');
       navigate('/', { replace: true });
     }
   }

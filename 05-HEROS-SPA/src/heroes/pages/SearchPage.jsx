@@ -56,8 +56,8 @@ export const SearchPage = () => {
               <h1>Resultados</h1>
             </div>
             <div className="col-md-12">
-              <div className="alert alert-primary text-center animate__animated animate__fadeIn" style={{display: showSearch ? '' : 'none' }}>Buscando heroe </div>
-              <div className="alert alert-danger text-center animate__animated animate__fadeIn" style={{display: showError ? '' : 'none' }}>No exite un heroe <b>{q}</b></div>
+              <div className="alert alert-primary text-center animate__animated animate__fadeIn" style={{ display: showSearch ? '' : 'none' }}>Buscando heroe </div>
+              <div className="alert alert-danger text-center animate__animated animate__fadeIn" style={{ display: showError ? '' : 'none' }}>No exite un heroe <b>{q}</b></div>
             </div>
 
             <div className="d-flex justify-content-between flex-wrap">

@@ -32,7 +32,7 @@ export const LoginPage = () => {
     }
 
     if (contrasenaValue && emailValue && validarEmail(emailValue)) {
-      login('gambito');
+      login('Gambito');
       navigate('/', { replace: true });
     }
   }

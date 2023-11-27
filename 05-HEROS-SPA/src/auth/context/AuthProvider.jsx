@@ -19,15 +19,15 @@ export const AuthProvider = ({ children }) => {
 
     const login = (name = '') => {
 
-        const user = {id: 1, name: name};
+        const user = { id: 1, name: name };
 
-        const action  = {
+        const action = {
             type: types.login,
             payload: user
         };
 
         localStorage.setItem('user', JSON.stringify(user));
-
+        
         dispatch(action);
     };
 

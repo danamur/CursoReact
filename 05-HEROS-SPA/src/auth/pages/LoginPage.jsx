@@ -32,8 +32,12 @@ export const LoginPage = () => {
     }
 
     if (contrasenaValue && emailValue && validarEmail(emailValue)) {
+
+      const lastPath = localStorage.getItem('lastPath') || '/';
+
       login('Gambito');
-      navigate('/', { replace: true });
+      
+      navigate(lastPath, { replace: true });
     }
   }
 

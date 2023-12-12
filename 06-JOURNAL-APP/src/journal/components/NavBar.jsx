@@ -19,5 +19,5 @@ export const NavBar = ({ drawerWidth = 240 }) => {
 
             </Toolbar>
         </AppBar>
-    )
-}
+    );
+};

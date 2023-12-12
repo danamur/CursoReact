@@ -4,6 +4,11 @@
   background-color: #242424;
 }
 
+#root {
+  background-color: #242424;
+  color: aliceblue;
+}
+
 .box-shadow {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 }

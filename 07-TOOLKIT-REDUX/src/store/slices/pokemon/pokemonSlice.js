@@ -8,7 +8,7 @@ export const pokemonSlice = createSlice({
         isLoading: false,
     },
     reducers: {
-        startLoadingPokemons: (state ) => {
+        startLoadingPokemons: (state) => {
             state.isLoading = true;
         },
         setPokemons: (state, actions) => {

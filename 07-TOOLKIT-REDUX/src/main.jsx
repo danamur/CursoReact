@@ -5,11 +5,13 @@ import App from './App.jsx';
 import './index.css';
 
 import { store } from './store/store.js';
+import { PokemonApp } from './PokemonApp.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={ store }>
-      <App />
+      {/* <App /> */}
+      <PokemonApp />
     </Provider>
   </React.StrictMode>,
 )

@@ -8,8 +8,8 @@ export const todosApi = createApi({
     endpoints: (builder) => ({
         getTodos: builder.query({
             query: () => '/todos'
-        }),
-    }),
+        })
+    })
 });
 
 export const { useGetTodosQuery } = todosApi;

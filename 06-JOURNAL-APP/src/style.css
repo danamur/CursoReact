@@ -14,11 +14,11 @@
 }
 
 .MuiInputBase-input {
-  color: white !important;
+  color: #543884 !important;
 }
 
 .MuiInputLabel-root {
-  color: white !important;
+  color: #543884 !important;
 }
 
 .MuiOutlinedInput-notchedOutline {
@@ -27,4 +27,8 @@
 
 .MuiFilledInput-root {
   border-color: #543884 !important;
+}
+
+.MuiTypography-h4 {
+  color: #543884;
 }

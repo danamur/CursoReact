@@ -1,13 +1,15 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Link as RouterLink } from 'react-router-dom';
 import { Button, Grid, Link, TextField, Typography } from '@mui/material';
 import { AuthLayout } from '../layout/AuthLayout';
 import { useForm } from '../../hooks';
+import { starCreatingUserWithEmailPassword } from '../../store/auth';
 
 const formData = {
-    email: '',
-    password: '',
-    name: ''
+    email: 'daniel.namur.dev@gmail.com',
+    password: '123456',
+    name: 'Daniel Namur'
 };
 
 const formValidations = {
@@ -18,13 +20,21 @@ const formValidations = {
 
 export const RegisterPage = () => {
 
+    const dispatch = useDispatch();
     const [formSubmitted, setFormSubmitted] = useState(false);
 
     const { name, email, password, onInputChange, formState, isFormValid, nameValid, emailValid, passwordValid } = useForm(formData, formValidations);
 
     const onSubmit = (event) => {
         event.preventDefault();
+
         setFormSubmitted(true);
+
+        if (!isFormValid) {
+            return;
+        }
+
+        dispatch(starCreatingUserWithEmailPassword(formState));
     }
 
     return (

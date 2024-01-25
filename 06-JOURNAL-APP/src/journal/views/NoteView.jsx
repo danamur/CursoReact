@@ -4,7 +4,7 @@ import { ImageGallery } from '../components';
 
 export const NoteView = () => {
   return (
-    <Grid container direction='row' justifyContent='space-between' alignItems='center' sx={{ mb: 2 }}>
+    <Grid className="animate__animated animate__fadeIn animate__faster" container direction='row' justifyContent='space-between' alignItems='center' sx={{ mb: 2 }}>
         <Grid item>
             <Typography fontSize={ 39 } fontWeight='light'> 8 de Diciembre, 2023</Typography>
         </Grid>

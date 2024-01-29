@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
-import { TurnedInNot } from '@mui/icons-material';
-import { Box, Divider, Drawer, Grid, Hidden, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material';
+import { Box, Divider, Drawer, Hidden, List, Toolbar, Typography } from '@mui/material';
 import { SideBarItem } from './';
 
 export const SideBar = ({ drawerWidth = 240 }) => {
